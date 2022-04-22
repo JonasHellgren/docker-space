@@ -10,6 +10,10 @@ it replies with its status and destination
 
 ports in docker.compose.yaml file means outer:inner
 
+The folders command and ship contains source code
+The code is translated to jar files by running "mvn clean install" in each folder
+The jar files are then moved to folders ending with -build
+docker-compose.yaml uses this jar files for the build
 
 commands for running containers:
 docker-compose up --build
