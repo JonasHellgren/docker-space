@@ -1,0 +1,10 @@
+version: '3'
+services:
+  commandcenter:
+    build: command-build/
+    ports:
+      - "8050:8080"
+  compose-ui:
+    build: ship-build/
+    ports:
+      - "8060:8080"
