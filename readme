@@ -1,4 +1,16 @@
+
+based on
+https://www.youtube.com/watch?v=tVPej_vnlcc&t=874s
+
+This example have two services: command and ship
+The ship requests command for destination via http://commandcenter:8080/
+
+WHen ship is contacted via its external port http://localhost:8060/
+it replies with its status and destination
+
+ports in docker.compose.yaml file means outer:inner
+
+
+commands for running containers:
 docker-compose up --build
-
-
 http://localhost:8060/
